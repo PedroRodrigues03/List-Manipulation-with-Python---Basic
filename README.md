@@ -13,7 +13,7 @@ The user will be able to choose when he wants to stop adding new products and th
 This is a basic project, where i won't be worried about exceptions (maybe in the future) or DB, for now at least.
 This program has been writed to show how List Comprehension, Lambda Function e Deep Copy can be usefull for begginers.
 
-# Código
+# Code
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="/src/main.py"> Código Fonte</a></li>
 
