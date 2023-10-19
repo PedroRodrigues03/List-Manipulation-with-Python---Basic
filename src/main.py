@@ -27,6 +27,14 @@ if __name__ == "__main__":
         else:
             print('Invalid Option!')
 
+        question_increase = str(input("Do you want to increase the price by 10% [y/n]? ")).strip().upper()[0]
+        if question_increase in "Y":
+            increased_lists = package.increase(lists_copy)
+            for d in increased_lists:
+                for key, value in d.items():
+                    print(f'{key} : {value}', end=' | ')
+                package.next_line()
+
         question = str(input("Do you want to exit [y/n]? ")).strip().upper()[0]
         if question in "Y":
             package.exit()
