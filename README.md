@@ -15,5 +15,5 @@ This program has been writed to show how List Comprehension, Lambda Function e D
 
 # Code
 
-<li><a href="/src/main.py"> Código Fonte</a></li>
+<li><a href="/src/main.py"> Code</a></li>
 
