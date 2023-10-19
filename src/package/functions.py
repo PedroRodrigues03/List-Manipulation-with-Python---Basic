@@ -49,6 +49,12 @@ def increase(list):
     ]
     return increased_lists
 
+def through_dictinary(list):
+    for dictionary in list:
+        for key, value in dictionary.items():
+            print(f'{key} : {value}', end=' | ')
+        next_line()
+
 def exit():
     print('Goodbye!')
     print('Closing System. Wait.')

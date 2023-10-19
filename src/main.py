@@ -8,22 +8,16 @@ if __name__ == "__main__":
         operation = str(input("Do you want to order by name[n], price[p], category[c]? ")).strip().upper()[0]
         if operation in "N":
             ordered_by_name_list = package.order_by_name(lists_copy)
-            for dictionary in ordered_by_name_list:
-                for key, value in dictionary.items():
-                    print(f'{key} : {value}', end=' | ')
-                package.next_line()
+            package.through_dictinary(ordered_by_name_list)
+            package.next_line()
         elif operation in "P":
             ordered_by_price_list = package.order_by_price(lists_copy)
-            for dicti in ordered_by_price_list:
-                for key, value in dicti.items():
-                    print(f'{key} : {value}', end=' | ')
-                package.next_line()
+            package.through_dictinary(ordered_by_price_list)
+            package.next_line()
         elif operation in "C":
             ordered_by_category_list = package.order_by_category(lists_copy)
-            for dic in ordered_by_category_list:
-                for key, value in dic.items():
-                    print(f'{key} : {value}', end=' | ')
-                package.next_line()
+            package.through_dictinary(ordered_by_category_list)
+            package.next_line()
         else:
             print('Invalid Option!')
 
