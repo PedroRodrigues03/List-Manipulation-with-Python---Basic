@@ -56,7 +56,7 @@ def through_dictinary(list):
         next_line()
 
 def exit():
-    print('Goodbye!')
+    print('Goodbye! 🤖')
     print('Closing System. Wait.')
     sleep(3)
     os.system('clear')
