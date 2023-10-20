@@ -21,6 +21,7 @@ if __name__ == "__main__":
         else:
             print('Invalid Option!')
 
+        package.next_line()
         question_increase = str(input("Do you want to increase the price [y/n]? ")).strip().upper()[0]
         if question_increase in "Y":
             multiplier = int(input("By what amount do you want to increase (%)? "))
@@ -29,7 +30,8 @@ if __name__ == "__main__":
                 for key, value in d.items():
                     print(f'{key} : {value}', end=' | ')
                 package.next_line()
-
+        
+        package.next_line()
         question = str(input("Do you want to exit [y/n]? ")).strip().upper()[0]
         if question in "Y":
             package.exit()
