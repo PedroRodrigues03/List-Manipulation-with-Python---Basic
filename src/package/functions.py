@@ -2,7 +2,7 @@ import copy
 import os
 from time import sleep
 
-def creat_list():
+def create_list():
     products_list = []
 
     while True:

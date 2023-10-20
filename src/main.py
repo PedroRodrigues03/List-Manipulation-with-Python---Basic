@@ -1,7 +1,7 @@
 import package
 
 if __name__ == "__main__":
-    lists = package.creat_list()
+    lists = package.create_list()
     lists_copy = package.deep_copy(lists)
 
     while True:
