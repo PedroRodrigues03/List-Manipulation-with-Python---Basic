@@ -21,9 +21,10 @@ if __name__ == "__main__":
         else:
             print('Invalid Option!')
 
-        question_increase = str(input("Do you want to increase the price by 10% [y/n]? ")).strip().upper()[0]
+        question_increase = str(input("Do you want to increase the price [y/n]? ")).strip().upper()[0]
         if question_increase in "Y":
-            increased_lists = package.increase(lists_copy)
+            multiplier = int(input("By what amount do you want to increase (%)? "))
+            increased_lists = package.increase(lists_copy, multiplier)
             for d in increased_lists:
                 for key, value in d.items():
                     print(f'{key} : {value}', end=' | ')

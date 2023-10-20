@@ -42,9 +42,9 @@ def order_by_category(list):
     ordered_by_category = sorted(list, key=lambda item : item['category'])
     return ordered_by_category
 
-def increase(list):
+def increase(list, multiplier):
     increased_lists = [
-        {**product, 'price' : product['price'] * 1.1}
+        {**product, 'price' : round(product['price'] * ((multiplier/100) + 1), 2)}
         for product in list
     ]
     return increased_lists
